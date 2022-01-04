@@ -87,8 +87,6 @@ if (!function_exists('idvp_vsinema_basic')) {
     <?php
         $output = ob_get_contents();
         ob_end_clean();
-        return  $output;
-
-        return $data->post_title;
+        return $output;
     }
 }
