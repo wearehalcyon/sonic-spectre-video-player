@@ -1,0 +1,548 @@
+.idvp_svidia_player_container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: 342px;
+    font-size: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.idvp_svidia_player{
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 342px;
+    background-color: #000;
+}
+
+.idvp_svidia_player[poster]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.idvp_video_title{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: calc(100% - 20px);
+    height: auto;
+    color: #fff;
+    background-color: #222;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all .5s;
+    transition-delay: 2s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.idvp_video_title_header{
+    display: block;
+    position: relative;
+    width: calc(100% - 100px);
+}
+
+.idvp_svidia_player_logo{
+    display: inline-block !important;
+    transition: all .05s !important;
+}
+
+.idvp_svidia_player_logo:hover{
+    opacity: .9 !important;
+}
+
+.idvp_svidia_player_logo:focus{
+    outline: none !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
+.idvp_svidia_player_logo img{
+    display: block !important;
+    width: auto !important;
+    height: 16px !important;
+}
+
+.idvp_video_controls{
+    display: block;
+    position: absolute;
+    width: calc(100% - 20px);
+    height: auto;
+    color: #fff;
+    background-color: #222;
+    bottom: 10px;
+    left: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all .5s;
+    transition-delay: 2s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.idvp_svidia_player_container.acrylic .idvp_video_title,
+.idvp_svidia_player_container.acrylic .idvp_video_controls{
+    background-color: rgba(0,0,0, .5);
+    -webkit-backdrop-filter: blur(40px) saturate(2);
+    backdrop-filter: blur(40px) saturate(2);
+}
+
+.idvp_svidia_player_container.mousemove .idvp_video_title,
+.idvp_svidia_player_container.mousemove .idvp_video_controls,
+.idvp_svidia_player_container.not_played .idvp_video_title,
+.idvp_svidia_player_container.not_played .idvp_video_controls{
+    opacity: 1;
+    transition-delay: 0s;
+    padding: 15px;
+}
+
+.idvp_player_menu_layer{
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.idvp_player_menu_bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.idvp_player_menu{
+    display: block !important;
+    position: absolute !important;
+    min-width: 150px !important;
+    height: auto !important;
+    min-height: 10px !important;
+    background-color: #222;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 60%),
+                0px 0px 0px 1px rgba(0,0,0,0.35) !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(255,255,255,.1) !important;
+    z-index: 2 !important;
+}
+
+.idvp_player_menu strong.title{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.idvp_player_menu p.textdata{
+    font-size: 11px;
+    display: block;
+    margin: 0 20px 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.idvp_player_menu p.textdata a{
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #02b5ff;
+}
+
+.idvp_player_menu p.textdata a:hover{
+    text-decoration: none;
+}
+
+.idvp_svidia_player_container.acrylic .idvp_player_menu{
+    background-color: rgba(0,0,0, .5);
+    -webkit-backdrop-filter: blur(35px) saturate(1.5);
+    backdrop-filter: blur(35px) saturate(1.5);
+}
+
+.idvp_player_menu .idvp_player_menu_item{
+    display: block !important;
+    font-size: 12px !important;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 3px !important;
+}
+
+.idvp_player_menu .idvp_player_menu_item a{
+    display: block !important;
+    font-size: 12px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+    transition: all .05s !important;
+}
+
+.idvp_player_menu .idvp_player_menu_item a:hover,
+.idvp_player_menu .idvp_player_menu_item a:active{
+    background-color: rgba(255,255,255,.1) !important;
+}
+
+.idvp_player_menu .idvp_player_menu_item a:focus{
+    outline: none !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+.idvp_player_menu_divider{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    background-color: rgba(255,255,255,.15);
+    height: 1px;
+}
+
+@media all and (view-mode: fullscreen){
+    .idvp_svidia_player_container:hover .idvp_video_title,
+    .idvp_svidia_player_container:hover .idvp_video_controls{
+        opacity: 0;
+        transition-delay: 2s;
+    }
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container span.idvp_svidia_player_fullscreen_button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: normal;
+    font-size: 0;
+    margin-right: 10px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_pause{
+    display: none;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_video_controls_buttons{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button:hover,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container span.idvp_svidia_player_fullscreen_button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button:active,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container span.idvp_svidia_player_fullscreen_button:active{
+    transform: translateY(2px);
+    opacity: 1;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button img,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container span.idvp_svidia_player_fullscreen_button img{
+    width: auto;
+    height: 16px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container span.idvp_svidia_player_fullscreen_button{
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 3px 5px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container span.idvp_svidia_player_fullscreen_button.idvp_close{
+
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 100%;
+    transition: all .3s;
+    transition-delay: 1s;
+    background-color: rgba(255,255,255, .1);
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup:hover::before{
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup{
+    position: relative;
+    padding-left: 5px;
+    z-index: 1;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup img{
+    width: auto;
+    height: 14px;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup_values{
+    position: relative;
+    transition: all .3s;
+    transition-delay: .7s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container .idvp_player_svidia_speedup:hover .idvp_player_svidia_speedup_values{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .2s;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedup,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedupmore,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedreset,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedupmaximum{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 0;
+    opacity: .5;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedup:hover,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedupmore:hover,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedreset:hover,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedupmaximum:hover{
+    opacity: 1;
+}
+
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedup.idvp_active,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedupmore.idvp_active,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedreset.idvp_active,
+.idvp_svidia_player_container .idvp_video_controls .idvp_video_controls_container button.idvp_player_svidia_button.idvp_svidia_player_btn_speedupmaximum.idvp_active{
+    opacity: 1;
+    color: #fff;
+}
+
+.idvp_video_progress{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.idvp_video_controls_volume{
+    font-size: 0;
+}
+
+.idvp_player_duration_time{
+    font-size: 12px;
+    width: 60px;
+}
+
+.idvp_playert_start_time{
+    text-align: left;
+}
+
+.idvp_playert_end_time{
+    text-align: right;
+}
+
+.idvp_video_progress progress {
+    width: calc(100% - 120px);
+    height: 4px;
+    background: rgba(255,255,255, .15);
+    transition: all .3s;
+    transition-delay: 2s;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.idvp_video_progress progress:hover{
+    height: 6px;
+    transition-delay: 0s;
+}
+.idvp_video_progress progress::-webkit-progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255, .15);
+    transition: all .3s;
+    transition-delay: 2s;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.idvp_video_progress progress::-webkit-progress-bar:hover {
+    height: 6px;
+    transition-delay: 0s;
+}
+.idvp_video_progress progress::-webkit-progress-value {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 1);
+    transition: all .3s;
+    cursor: pointer;
+}
+.idvp_video_progress progress::-moz-progress-bar {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 1);
+    transition: all .3s;
+    cursor: pointer;
+    border: 0;
+}
+
+span.idvp_svidia_open_settings{
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+span.idvp_svidia_open_settings:hover{
+    opacity: .8;
+}
+
+span.idvp_svidia_open_settings img{
+    width: auto;
+    height: 16px;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+
+    input.idvp_svidia_player_volume[type=range] {
+		-webkit-appearance: none;
+        cursor: pointer;
+		/* Hides the slider so that custom slider can be made */
+		width: 60px;
+
+		/* Specific width is required for Firefox. */
+		height: 2px;
+		background-color: rgba(255,255,255, .3);
+		border-radius: 6px;
+		outline-offset: 10px;
+	}
+
+	input.idvp_svidia_player_volume[type=range]:disabled {
+		opacity: 0.7;
+	}
+
+	input.idvp_svidia_player_volume[type=range]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		border: none;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background: #fff;
+		cursor: grab;
+        transition: all .3s;
+	}
+    input.idvp_svidia_player_volume[type=range]::-webkit-slider-thumb:hover {
+        transform: scale(1.5);
+    }
+
+	input.idvp_svidia_player_volume[type=range]::-moz-range-thumb {
+		border: none;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background: #fff;
+		cursor: pointer;
+		box-sizing: border-box;
+        cursor: grab;
+        transition: all .3s;
+	}
+    input.idvp_svidia_player_volume[type=range]::-moz-range-thumb:hover {
+        transform: scale(1.5);
+    }
+}
+
+input.idvp_svidia_player_volume[type=range]::-ms-track {
+	width: 100%;
+	height: 6px;
+	border-radius: 6px;
+	border-width: 19px 0;
+	border-color: var(--global--color-background);
+	background: transparent;
+	color: transparent;
+	cursor: pointer;
+}
+
+input.idvp_svidia_player_volume[type=range]::-ms-fill-upper {
+	background: var(--form--color-ranged);
+	border-radius: 6px;
+}
+
+input.idvp_svidia_player_volume[type=range]::-ms-fill-lower {
+	background: var(--form--color-ranged);
+	border-radius: 6px;
+}
+
+input.idvp_svidia_player_volume[type=range]::-ms-thumb {
+	border: 3px solid var(--form--color-ranged);
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	background: var(--global--color-background);
+	cursor: pointer;
+}

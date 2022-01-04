@@ -1,0 +1,176 @@
+#wpbody-content .idvp_description{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #c3c4c7;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+#wpbody-content .idvp_title{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#wpbody-content .idvp_uploader_title{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.idvp_uploader_button{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.idvp_video_preview{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.idvp_preview_container,
+.idvp_preview_data,
+.idvp_video_src_input{
+    position: relative;
+    width: 50%;
+}
+
+.idvp_video_information_title{
+    display: block;
+    padding: 0 30px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.idvp_preview_data p{
+    display: block;
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 1200px){
+    .idvp_preview_container,
+    .idvp_preview_data,
+    .idvp_video_src_input{
+        width: 100%;
+    }
+    .idvp_video_information_title{
+        padding: 20px 0;
+    }
+    .idvp_preview_data p{
+        padding: 0;
+    }
+}
+
+button.idvp_remove_btn{
+    display: inline-block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #f00;
+    background-color: #fff;
+    color: #f00;
+    border-radius: 100%;
+    padding: 0;
+    font-size: 18px;
+    top: -14px;
+    right: -14px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 18px;
+    z-index: 10;
+}
+
+button.idvp_remove_btn:hover{
+    background-color: #f00;
+    color: #fff;
+    border-color: #f00;
+}
+
+input[name="idvp_video_source"]{
+    width: 100%;
+    padding: 5px;
+    color: #777;
+    font-size: 12px;
+    border: 1px solid #777;
+}
+
+.idvp_video_shortcode{
+    display: block;
+}
+
+.idvp_video_shortcode h4{
+    font-size: 16px;
+}
+
+.idvp_advanced_settings_container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.idvp_column{
+    display: inline-block;
+    width: 100%;
+}
+
+.idvp_column p{
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+img.idvp_custom_column_thumbnail{
+    width: 110px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+table.wp-list-table thead tr th#video_poster{
+    width: 130px;
+}
+
+table.wp-list-table thead tr th#video_length,
+table.wp-list-table thead tr th#video_size{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
