@@ -25,7 +25,7 @@ git clone https://github.com/wearehalcyon/sonic-spectre-video-player.git
 ***
 <br>
 
-**Now go to videos list and create new video:<br>Now you can edit video as you see on the screenshot.**
+**Now you can edit video as you see on the screenshot.**
 ![Edit Video](https://sonicspectre.com/public-media/images/edit-video.jpg)
 ***
 <br>
