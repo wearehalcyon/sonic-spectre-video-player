@@ -50,14 +50,4 @@ jQuery(document).ready(function($){
         $('.idvp_preview_container, .idvp_preview_data').remove();
 		button.show();
 	});
-
-	// Chanhe theme in select
-	$('.idvp_player_theme').on('change', function(){
-		let value = $(this).val();
-		if (value == 'default') {
-			$('span.idvp_theme_value').text('Default');
-		} else {
-			$('span.idvp_theme_value').text('Acrylic');
-		}
-	});
 });
